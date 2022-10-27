@@ -1,0 +1,27 @@
+.row{
+  margin-left: 0px;
+  color: #fff;
+}
+
+.videos{
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y:hidden ;
+}
+
+.videos::-webkit-scrollbar{
+  display: none;
+}
+
+
+.video{
+  max-height: 250px;
+  margin-right: 10px;
+
+}
+.video-header{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+// import Navbar from './Componence/Navbar/Navbar'
+import Banner from './BT-componence/Banner/Banner'
+import Navbar from './BT-componence/Navbar/Navbar'
+import Post from './BT-componence/Posts/Post'
+import './App.css'
+import {orginals,actions} from './uls'
+import Video from './BT-componence/Videos/Videos'
+export class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <Navbar/>
+        <Banner/>
+        <Post urls={orginals} title='Netflix Orginal' />
+        <Post urls={actions} title='Actions' isSmall />
+        <Post urls={actions} title='Actions' isSmall />
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
